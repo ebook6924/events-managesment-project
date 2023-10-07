@@ -22,7 +22,7 @@ const Login = () => {
                 console.log(resut.user)
                 Swal.fire(
                     'Greate!',
-                    'Accound login sucessfully',
+                    'User login sucessfully',
                     'success'
                 )
                 form.reset('')

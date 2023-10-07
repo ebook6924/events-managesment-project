@@ -5,34 +5,28 @@ import Swal from "sweetalert2";
 
 
 const Navbar = () => {
-    const { user, logoutUser  } = useContext(AuthContext)
+    const { user, logoutUser } = useContext(AuthContext)
     const handleSetActive = (to) => {
         console.log(to);
-      };
+    };
     const handleLogout = () => {
         logoutUser()
-            .then(result => {
-                console.log(result.user)
-                Swal.fire(
-                    'Good job!',
-                    'You clicked the button!',
-                    'success'
-                )
-
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        Swal.fire(
+            'wow !',
+            'user LogOut',
+            'success'
+        )
+            
     }
     const navInfo = <>
         <li>
             <NavLink
-                activeClass="active" 
-                to="/" 
-                spy={true} 
-                smooth={true} 
-                offset={50} 
-                duration={500} 
+                activeClass="active"
+                to="/"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 onSetActive={handleSetActive}
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
@@ -45,12 +39,12 @@ const Navbar = () => {
             !user ?
                 <li>
                     <NavLink
-                        activeClass="active" 
-                        to="/resgister" 
-                        spy={true} 
-                        smooth={true} 
-                        offset={50} 
-                        duration={500} 
+                        activeClass="active"
+                        to="/resgister"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
                         onSetActive={handleSetActive}
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
@@ -61,12 +55,12 @@ const Navbar = () => {
                 </li> :
                 <li>
                     <NavLink
-                        activeClass="active" 
-                        to="/login" 
-                        spy={true} 
-                        smooth={true} 
-                        offset={50} 
-                        duration={500} 
+                        activeClass="active"
+                        to="/login"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
                         onSetActive={handleSetActive}
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
@@ -76,32 +70,32 @@ const Navbar = () => {
                     </NavLink>
                 </li>
         }
-       {user && 
-         <li>
-         <NavLink
-             activeClass="active" 
-             to="/news" 
-             spy={true} 
-             smooth={true} 
-             offset={50} 
-             duration={500} 
-             onSetActive={handleSetActive}
-             className={({ isActive, isPending }) =>
-                 isPending ? "pending" : isActive ? "active" : ""
-             }
-         >
-             News
-         </NavLink>
-     </li>
-       }
+        {user &&
+            <li>
+                <NavLink
+                    activeClass="active"
+                    to="/news"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active" : ""
+                    }
+                >
+                    Book
+                </NavLink>
+            </li>
+        }
         <li>
             <NavLink
-                activeClass="active" 
-                to="/contact" 
-                spy={true} 
-                smooth={true} 
-                offset={50} 
-                duration={500} 
+                activeClass="active"
+                to="/contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 onSetActive={handleSetActive}
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
