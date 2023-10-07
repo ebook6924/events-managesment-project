@@ -6,7 +6,9 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
     const { user, logoutUser  } = useContext(AuthContext)
-
+    const handleSetActive = (to) => {
+        console.log(to);
+      };
     const handleLogout = () => {
         logoutUser()
             .then(result => {
@@ -25,7 +27,13 @@ const Navbar = () => {
     const navInfo = <>
         <li>
             <NavLink
-                to="/"
+                activeClass="active" 
+                to="/" 
+                spy={true} 
+                smooth={true} 
+                offset={50} 
+                duration={500} 
+                onSetActive={handleSetActive}
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }
@@ -37,7 +45,13 @@ const Navbar = () => {
             !user ?
                 <li>
                     <NavLink
-                        to="/resgister"
+                        activeClass="active" 
+                        to="/resgister" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={50} 
+                        duration={500} 
+                        onSetActive={handleSetActive}
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
                         }
@@ -47,7 +61,13 @@ const Navbar = () => {
                 </li> :
                 <li>
                     <NavLink
-                        to="/login"
+                        activeClass="active" 
+                        to="/login" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={50} 
+                        duration={500} 
+                        onSetActive={handleSetActive}
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
                         }
@@ -56,9 +76,33 @@ const Navbar = () => {
                     </NavLink>
                 </li>
         }
+       {user && 
+         <li>
+         <NavLink
+             activeClass="active" 
+             to="/news" 
+             spy={true} 
+             smooth={true} 
+             offset={50} 
+             duration={500} 
+             onSetActive={handleSetActive}
+             className={({ isActive, isPending }) =>
+                 isPending ? "pending" : isActive ? "active" : ""
+             }
+         >
+             News
+         </NavLink>
+     </li>
+       }
         <li>
             <NavLink
-                to="/contact"
+                activeClass="active" 
+                to="/contact" 
+                spy={true} 
+                smooth={true} 
+                offset={50} 
+                duration={500} 
+                onSetActive={handleSetActive}
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }
@@ -78,7 +122,7 @@ const Navbar = () => {
                         {navInfo}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <h2 className="normal-case text-3xl font-semibold text-red-500">Event <span className="text-orange-400">Edu</span></h2>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

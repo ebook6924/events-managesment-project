@@ -7,6 +7,8 @@ import Contact from "../componets/Contact";
 import SigleService from "../componets/SigleService";
 import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "../componets/ErrorPage";
+import Book from "../componets/Book";
+import SingleNews from "../componets/SingleNews";
 
 export const router = createBrowserRouter([
     {
@@ -35,6 +37,16 @@ export const router = createBrowserRouter([
                 path:'/book/:id',
                 element:<PrivateRoutes><SigleService></SigleService></PrivateRoutes>,
                 loader:()=>fetch('/education.json')
+            },
+            {
+                path:'news',
+                element:<Book></Book>,
+                loader:()=>fetch('https://api.itbook.store/1.0/new')
+            },
+            {
+                path:'/news/:id',
+                element:<SingleNews></SingleNews>,
+                loader:({params})=>fetch(`https://api.itbook.store/1.0/books/${params.id}`)
             }
 
         ]
