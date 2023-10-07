@@ -1,0 +1,44 @@
+[
+      { "id":"1",
+        "name": "Mathematics Tutoring",
+        "image": "https://i.ibb.co/5cNvNNf/download-1.jpg",
+        "price": 30.00,
+        "description": "Our Mathematics Tutoring service offers comprehensive one-on-one support to help students excel in math. Whether your child is struggling with basic arithmetic or tackling advanced calculus, our experienced tutors are here to assist. Our dedicated instructors employ personalized teaching methods to cater to individual learning styles and needs. We focus on building strong foundational skills, fostering problem-solving abilities, and boosting confidence in mathematics. With flexible scheduling options and competitive pricing, our tutoring service is accessible to students of all ages and levels. Give your child the gift of mathematical success today and watch their skills and confidence grow with every lesson."
+      },
+      {
+        "id":"2",
+        "name": "Language Learning App",
+        "image": "https://i.ibb.co/nQ2H2yT/images-2.jpg",
+        "price": 9.99,
+        "description": "Immerse yourself in a world of languages with our Language Learning App. Our interactive app provides a dynamic platform to learn and master multiple languages at your own pace. Whether you're a beginner or aiming to refine your language skills, our app offers a comprehensive range of lessons and resources. Explore diverse cultures and broaden your horizons through language. With an affordable monthly subscription, you'll gain access to a rich library of content, including vocabulary, grammar exercises, cultural insights, and more. Download our app today and embark on your language-learning journey."
+      },
+      {
+        "id":"3",
+        "name": "Science Workshop",
+        "image": "https://i.ibb.co/dQt1Vjt/photo-1509021436665-8f07dbf5bf1d.jpg",
+        "price": 50.00,
+        "description": "Join our Science Workshop and dive into the fascinating world of scientific exploration. Our hands-on workshops provide a stimulating environment for participants of all ages to conduct exciting experiments and discover the wonders of science. Led by passionate and knowledgeable instructors, you'll explore topics ranging from physics to chemistry, biology, and beyond. We believe that learning should be fun and engaging, and our workshops are designed to spark curiosity and encourage critical thinking. With flexible scheduling and reasonable pricing, science enthusiasts of all backgrounds can join us on this thrilling educational journey."
+      },
+      {
+        "id":"4",
+        "name": "Online Coding Course",
+        "image": "https://i.ibb.co/KsxspsM/download-2.jpg",
+        "price": 79.99,
+        "description": "Unlock the world of coding with our Online Coding Course. Whether you're a beginner with no prior experience or an experienced programmer looking to expand your skills, our comprehensive course has something for everyone. Our expert instructors will guide you through programming languages, algorithms, web development, and more. You'll gain practical coding skills that are highly sought after in today's job market. With a flexible online platform and affordable pricing, you can learn coding on your own schedule. Start your coding journey today and take the first step towards a rewarding career in technology."
+      },
+      {
+        "id":"5",
+        "name": "Music Lessons",
+        "image": "https://i.ibb.co/n3kSZJv/music-lessons-or-sports.jpg",
+        "price": 25.00,
+        "description": "Discover the joy of music through our Music Lessons. Whether you're interested in learning to play an instrument or honing your vocal talents, our experienced instructors are here to guide you. We offer personalized music lessons for all ages and skill levels, helping you achieve your musical aspirations. From piano and guitar to singing and music theory, our lessons cover a wide range of musical disciplines. With competitive pricing and flexible scheduling, you can embark on your musical journey with ease. Unleash your creativity and passion for music today."
+      },
+      {
+        "id":"6",
+        "name": "History Lecture Series",
+        "image": "https://i.ibb.co/VVjnLTg/history-lecture-series-2013-banner.jpg",
+        "price": 15.00,
+        "description": "Explore the fascinating tapestry of human history with our History Lecture Series. Our expert historians delve into a wide range of historical topics, providing in-depth and engaging insights. Whether you're a history enthusiast or simply curious about the past, our lecture series is designed to inform and captivate. Join us as we journey through the annals of time, from ancient civilizations to modern revolutions. With affordable ticket prices and accessible online viewing options, you can enrich your understanding of the world's history from the comfort of your own home."
+      }
+    ]
+  

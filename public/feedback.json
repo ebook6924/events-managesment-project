@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Selena Gomez",
+        "image":"https://i.ibb.co/HNbWdzX/download-1.jpg",
+        "title":"web designer",
+        "description": "The product exceeded my expectations. I'm extremely happy with it."
+    },
+    {
+        "id": 2,
+        "name": "Dipongkar Roy",
+        "image":"https://i.ibb.co/z891qt1/download-2.jpg",
+        "title":"javascript Developer",
+        "description": "I encountered some issues with the product's software. It needs improvement."
+    },
+    {
+        "id": 3,
+        "name": "Isabella",
+        "image":"https://i.ibb.co/mTR4mps/download-3.jpg",
+        "title":"react Develper",
+        "description": "The product arrived damaged, but the customer support team promptly resolved the issue."
+    },
+    {
+        "id": 4,
+        "name": "Sophia",
+        "image":"https://i.ibb.co/mTR4mps/download-3.jpg",
+        "title":"web developer",
+        "description": "I found the product to be fairly priced and of good quality."
+    },
+    {
+        "id": 5,
+        "name": "Olivia",
+        "image":"https://i.ibb.co/7NcdVMy/download-5.jpg",
+        "title":"MERN stack dev",
+        "description": "The user interface of the software is intuitive and user-friendly."
+    },
+    {
+        "id": 6,
+        "name": "Emma",
+        "image":"https://i.ibb.co/stwMB3w/download-6.jpg",
+        "title":"network engineering",
+        "description": "I'm disappointed with the product's battery life. It doesn't last as long as advertised."
+    },
+    {
+        "id": 7,
+        "name": "Charlotte",
+        "image":"https://i.ibb.co/qFxHPxS/download-7.jpg",
+        "title":"responsive design",
+        "description": "The product arrived on time, and it's exactly what I needed."
+    },
+    {
+        "id": 8,
+        "name": "Amelia",
+        "image":"https://i.ibb.co/fGhTY52/download.jpg",
+        "title":"Full stack dev",
+        "description": "I had a great experience with this company. The product is top-notch."
+    }
+]
