@@ -6,12 +6,13 @@ import Login from "../componets/Login";
 import Contact from "../componets/Contact";
 import SigleService from "../componets/SigleService";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../componets/ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        errorElement: <p>404 page not allow</p>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
