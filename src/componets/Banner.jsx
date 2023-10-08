@@ -10,7 +10,7 @@ const Banner = () => {
                     data-aos-duration="3000">
                     <h1 className="mb-5 text-4xl font-bold w-full">Education is Backbone of Nation</h1>
                     <p className="mb-5">Education is a fundamental process that equips individuals with knowledge, skills, and critical thinking abilities. It empowers them to pursue careers, make informed decisions, and contribute positively to society growth and development.</p>
-                    <Link to='/news'>
+                    <Link to='/gallery'>
                         <button className="btn btn-primary border-2 border-green-500 ">Get Started</button>
                     </Link>
                 </div>
