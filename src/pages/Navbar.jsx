@@ -142,7 +142,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
-                        <span>{user?.email}</span>
+                        <span className="hidden lg:block">{user?.email}</span>
                         <div className="avatar">
                             <div className="w-16 rounded-full">
                                 <img src={user?.displayName} />
