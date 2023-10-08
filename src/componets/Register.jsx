@@ -1,22 +1,20 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
 
 const Register = () => {
     const { createUser } = useContext(AuthContext)
-    const [error ,setError] = useState()
+    
 
     const handleResgister = (event) => {
+        
         event.preventDefault()
         const form = event.target;
 
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password)
-        if(password.length<6){
-           return setError('6 digit password dite hbe')
-        }
         
         createUser(email, password)
         
@@ -31,7 +29,7 @@ const Register = () => {
                 
             })
             .catch(error => {
-                console.error(error)
+                console.log(error.massage)
             })
 
     }
@@ -55,7 +53,7 @@ const Register = () => {
 
                     <input className="btn btn-error" type="submit" value="Register" />
                 </div>
-                <p>{error}</p>
+                
                 <p className="text-center mt-3">Allready have accound <Link to='/login' className="bg-orange-500 px-3 text-center py-2 rounded">Login</Link></p>
             </form>
         </div>

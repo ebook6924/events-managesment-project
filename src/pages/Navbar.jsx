@@ -91,6 +91,22 @@ const Navbar = () => {
         <li>
             <NavLink
                 activeClass="active"
+                to="/gallery"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onSetActive={handleSetActive}
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                }
+            >
+                Gallery
+            </NavLink>
+        </li>
+        <li>
+            <NavLink
+                activeClass="active"
                 to="/contact"
                 spy={true}
                 smooth={true}

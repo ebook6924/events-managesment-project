@@ -9,6 +9,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "../componets/ErrorPage";
 import Book from "../componets/Book";
 import SingleNews from "../componets/SingleNews";
+import Galary from "../componets/Galary";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
                 path:'/news/:id',
                 element:<SingleNews></SingleNews>,
                 loader:({params})=>fetch(`https://api.itbook.store/1.0/books/${params.id}`)
+            },
+            {
+                path:'gallery',
+                element:<PrivateRoutes><Galary></Galary></PrivateRoutes>
             }
 
         ]
