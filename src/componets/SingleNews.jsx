@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 
 
 const SingleNews = () => {
@@ -6,8 +6,8 @@ const SingleNews = () => {
     //console.log(data)
     const navigate = useNavigate()
 
-    const handleBack =()=>{
-       navigate(-1)
+    const handleBack = () => {
+        navigate(-1)
     }
     return (
         <div className="block w-9/12 mx-auto rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -27,19 +27,25 @@ const SingleNews = () => {
                     {data?.authors}
                 </h5>
                 <div className="badge badge-info gap-2">
-                    
-                <p className="">Price:{data.price}</p>
+
+                    <p className="">Price:{data.price}</p>
                 </div>
-                
+
                 <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
                     {data?.desc}
                 </p>
                 <p className="text-base text-neutral-600 dark:text-neutral-200">
                     <small className="text-neutral-500 dark:text-neutral-400">Last updated {data.year} ago</small>
                 </p>
-                <button onClick={handleBack} className="btn btn-sm">Back now</button> 
+
+                <div className="flex items-center">
+                    <button onClick={handleBack} className="btn bg-fuchsia-200 w-32 mr-5">Back now</button>
+                    <Link to='/gallery'>
+                        <button className="btn bg-fuchsia-300">Gallery</button>
+                    </Link>
+                </div>
             </div>
-            
+
         </div>
     );
 };

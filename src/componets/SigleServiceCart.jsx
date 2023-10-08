@@ -1,13 +1,13 @@
-import { useNavigate, useNavigation } from "react-router-dom";
+import {useNavigate, useNavigation } from "react-router-dom";
 import LoadingSpainer from "./LoadingSpainer";
 
 
 const SigleServiceCart = ({ readingBook }) => {
-    
-    const { image,description } = readingBook || {};
+
+    const { image, description } = readingBook || {};
     const navigate = useNavigate();
-    const handleBack=()=>{
-       navigate(-1)
+    const handleBack = () => {
+        navigate(-1)
     }
     const navigation = useNavigation()
     if (navigation.state === "loading") {
@@ -19,15 +19,17 @@ const SigleServiceCart = ({ readingBook }) => {
                 className="rounded-lg h-80 w-full"
                 src={image}
                 alt="" />
-            <div className="absolute top-28 bottom-0">   
+            <div className="absolute top-28 bottom-0">
                 <p className=" bg-orange-300 mb-2 mt-4 px-4 text-base text-white">
                     {description}
                 </p>
-               <div className="text-center">
-               <button onClick={handleBack} className="btn btn-error">back</button>
-               </div>
+                <div className="text-center">
+                    <button onClick={handleBack} className="btn btn-error">back</button>
+
+                </div>
+               
             </div>
-            
+
         </div>
     );
 };
