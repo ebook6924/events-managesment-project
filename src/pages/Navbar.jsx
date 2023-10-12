@@ -145,7 +145,7 @@ const Navbar = () => {
                         <span className="hidden lg:block">{user?.email}</span>
                         <div className="avatar">
                             <div className="w-16 rounded-full">
-                                <img src={user?.displayName} />
+                                <img src={user?.photoURL} />
                             </div>
                         </div>
                         <button onClick={handleLogout} className="btn btn-success">Logout</button>
